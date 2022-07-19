@@ -31,9 +31,40 @@ h1 {
   height: 56px;
 }
 
+/* header style end */
+
+.main-container {
+  margin: 50px;
+  border: 2px solid gray;
+  display: flex;
+  border-radius: 10px;
+}
+/* .half-side {
+  border: 2px solid red;
+} */
+.fix {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: black;
+}
+.fix a {
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid gray;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+#core {
+  flex-grow: 1;
+}
+
 /* responsive style apply */
 @media only screen and (max-width: 767px) {
-  .header-container {
+  .header-container,
+  .main-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
