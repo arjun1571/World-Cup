@@ -16,6 +16,8 @@ body {
   background-color: black;
   color: white;
   border-radius: 30px;
+  /* width: 312px;
+  height: 312px; */
 }
 .header-text {
   padding: 35px;
@@ -35,7 +37,7 @@ h1 {
 
 .main-container {
   margin: 50px;
-  border: 2px solid gray;
+  /* border: 2px solid gray; */
   display: flex;
   border-radius: 10px;
 }
@@ -46,6 +48,9 @@ h1 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   background-color: black;
+  width: 312px;
+  height: 312px;
+  border-radius: 10px;
 }
 .fix a {
   color: black;
@@ -60,11 +65,22 @@ h1 {
 #core {
   flex-grow: 1;
 }
+.multi-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  padding: 10px;
+  box-shadow: 0 0 1px 0 gray;
+  border-radius: 10px;
+  margin: 5px;
+}
 
 /* responsive style apply */
 @media only screen and (max-width: 767px) {
   .header-container,
-  .main-container {
+  .main-container,
+  .multi-card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
