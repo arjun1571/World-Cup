@@ -1,7 +1,11 @@
-/* google fonts */
+/*=================
+ google fonts 
+ ==================*/
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-/* multi container style */
+/* ==================
+multi container style 
+======================*/
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +14,9 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* header style start */
+/*------------------
+ header style start 
+ -------------------*/
 
 .header-container {
   display: grid;
@@ -33,33 +39,86 @@ h1 {
   width: 187px;
   height: 56px;
 }
+/*-------------------------------------------
+ button animation style use help for google 
+ --------------------------------------------*/
+
+.button {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.button:hover:before {
+  opacity: 1;
+}
+
+.button:after {
+  z-index: -1;
+  content: "";
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/*-------------------
+ animation style end 
+ --------------------*/
+
 .card-title button {
   margin: 5px;
 }
-/* #cng-img {
-  position: relative;
-  height: 223px;
-  width: 340px;
-  margin: 0 auto;
-}
-#cng-img img {
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-#cng-img img.bottom:hover {
-  opacity: 0;
-} */
 
-/* header style end */
+/* ---------------
+header style end 
+------------------*/
 
-/* main style start */
+/*-----------------
+ main style start
+ ------------------ */
 .main-container {
   margin: 50px;
-  /* border: 2px solid gray; */
   display: flex;
   border-radius: 10px;
 }
@@ -103,9 +162,13 @@ span {
   margin-left: 500px;
   display: none;
 }
-/* main style end */
+/*----------------- 
+main style end 
+-------------------*/
 
-/* footer style start */
+/* ------------------
+footer style start 
+--------------------*/
 
 .foter-container {
   background-color: black;
@@ -124,13 +187,14 @@ span {
   text-align: center;
   color: #b9b9b9;
   font-size: 16px;
-  /* margin: 50px; */
   padding: 40px;
 }
 .foter-list {
   padding: 20px;
 }
-/* fotter incon style  */
+/* ----------------
+fotter incon style 
+-------------------- */
 .icon-container {
   text-align: center;
   font-size: 50px;
@@ -140,9 +204,13 @@ span {
   padding: 10px;
 }
 
-/* footer style end */
+/* -----------------
+footer style end 
+--------------------*/
 
-/* responsive style apply */
+/* --------------------
+responsive style apply 
+------------------------*/
 @media only screen and (max-width: 767px) {
   .header-container,
   .main-container,
@@ -175,7 +243,9 @@ span {
   }
 }
 
-/* match html styel start  */
+/*-----------------------
+ match html styel start 
+ ------------------------ */
 
 .math-img {
   text-align: center;
@@ -192,3 +262,4 @@ span {
 span {
   margin-right: 15px;
 }
+/* ---------------------------- */
