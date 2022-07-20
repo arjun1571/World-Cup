@@ -99,20 +99,24 @@ p {
 span {
   margin-left: 30px;
 }
+#button {
+  margin-left: 500px;
+  display: none;
+}
 /* main style end */
 
 /* footer style start */
 
 .foter-container {
   background-color: black;
-  height: 550px;
+  height: 600px;
   color: white;
 }
 .fotter-header {
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   border-bottom: 1px solid gray;
-  margin: 50px;
+  margin: 30px;
 }
 .footer-item {
   display: grid;
@@ -120,12 +124,22 @@ span {
   text-align: center;
   color: #b9b9b9;
   font-size: 16px;
-  margin: 50px;
+  /* margin: 50px; */
   padding: 40px;
 }
 .foter-list {
-  padding: 50px;
+  padding: 20px;
 }
+/* fotter incon style  */
+.icon-container {
+  text-align: center;
+  font-size: 50px;
+}
+.icon-container a {
+  color: white;
+  padding: 10px;
+}
+
 /* footer style end */
 
 /* responsive style apply */
@@ -140,6 +154,9 @@ span {
   .foter-text h3 {
     margin: 10px;
   }
+  .icon-container {
+    color: red;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .multi-card {
@@ -151,6 +168,10 @@ span {
     grid-template-columns: repeat(1, 1fr);
     /* margin-bottom: 50px; */
     padding-bottom: 50px;
+  }
+  #button {
+    display: block;
+    margin-left: 320px;
   }
 }
 
