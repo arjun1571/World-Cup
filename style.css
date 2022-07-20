@@ -33,6 +33,26 @@ h1 {
   width: 187px;
   height: 56px;
 }
+.card-title button {
+  margin: 5px;
+}
+/* #cng-img {
+  position: relative;
+  height: 223px;
+  width: 340px;
+  margin: 0 auto;
+}
+#cng-img img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#cng-img img.bottom:hover {
+  opacity: 0;
+} */
 
 /* header style end */
 
@@ -126,4 +146,22 @@ span {
     /* margin-bottom: 50px; */
     padding-bottom: 50px;
   }
+}
+
+/* match html styel start  */
+
+.math-img {
+  text-align: center;
+  display: flex;
+  padding: 5px;
+  margin: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.math-time {
+  text-align: center;
+  padding: 10px;
+}
+span {
+  margin-right: 15px;
 }
